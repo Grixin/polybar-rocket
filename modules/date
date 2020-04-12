@@ -1,0 +1,12 @@
+[module/date]
+type = internal/date
+interval = 1
+
+time = " %H:%M"
+time-alt = " %H:%M %a %d/%m"
+
+format-foreground = ${colors.white}
+format-padding = 1
+format-prefix = %{T2}%{T-}
+
+label = %time%

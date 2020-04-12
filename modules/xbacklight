@@ -1,0 +1,8 @@
+[module/xbacklight]
+type = internal/xbacklight
+
+format = <label>
+format-padding = 1
+format-foreground = ${colors.white}
+format-prefix = %{T2}%{T-}
+label = " %percentage%%"
