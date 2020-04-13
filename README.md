@@ -6,4 +6,4 @@
 - On Debian/Ubuntu: `sudo apt install fonts-font-awesome`
 
 ## Wallpaper
-- [simpledesktops](http://simpledesktops.com/browse/desktops/2019/mar/04/zurich-skyline/)
+- [backiee](https://backiee.com/wallpaper/vector-forest/98927)
