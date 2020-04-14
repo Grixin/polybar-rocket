@@ -1,7 +1,7 @@
 [module/google-chrome]
 type = custom/script
 click-left = google-chrome --new-window&
-click-middle = killall google-chrome&
+click-middle = killall chrome&
 click-right = google-chrome --incognito&
 exec = echo %{T3}%{T-}
 format-foreground = ${colors.google-chrome}
