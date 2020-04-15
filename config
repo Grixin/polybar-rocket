@@ -1,61 +1,28 @@
-;==========================================================
-;
-;
-;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
-;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
-;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
-;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
-;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
-;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
-;
-;
 ;   To learn more about how to configure Polybar
 ;   go to https://github.com/polybar/polybar
-;
-;   The README contains a lot of information
-;
-;==========================================================
 
-[colors]
-bg = #000
-fg = #FFF
+include-file = /home/$USER/.config/polybar/colors
 
-black = #000
-white = #FFF
-red = #F00
-trans = #00000000
-semi-trans = #55000000
-success = #00c853
-warning = #ffea00
-danger = #ff1744
-
-launcher = #204051
-i3 = #ffa41b
-code = #CAE8D5
-google-chrome = #4C8BF5
-firefox = #FFEC4A
-session = #DD5144
-steam = #00adee
-terminal = #63FC01
-
-[global/wm]
 include-file = /home/$USER/.config/polybar/modules/battery
 include-file = /home/$USER/.config/polybar/modules/cpu
 include-file = /home/$USER/.config/polybar/modules/date
+include-file = /home/$USER/.config/polybar/modules/filemanager
 include-file = /home/$USER/.config/polybar/modules/i3
 include-file = /home/$USER/.config/polybar/modules/launcher
+include-file = /home/$USER/.config/polybar/modules/lockscreen
 include-file = /home/$USER/.config/polybar/modules/memory
 include-file = /home/$USER/.config/polybar/modules/pulseaudio
 include-file = /home/$USER/.config/polybar/modules/session
 include-file = /home/$USER/.config/polybar/modules/temperature
+include-file = /home/$USER/.config/polybar/modules/title
 include-file = /home/$USER/.config/polybar/modules/window
 include-file = /home/$USER/.config/polybar/modules/wlan
 include-file = /home/$USER/.config/polybar/modules/xbacklight
 
-include-file = /home/$USER/.config/polybar/modules/google-chrome
-include-file = /home/$USER/.config/polybar/modules/firefox
-include-file = /home/$USER/.config/polybar/modules/steam
 include-file = /home/$USER/.config/polybar/modules/code
+include-file = /home/$USER/.config/polybar/modules/firefox
+include-file = /home/$USER/.config/polybar/modules/google-chrome
+include-file = /home/$USER/.config/polybar/modules/steam
 include-file = /home/$USER/.config/polybar/modules/terminal
 
 [bar/main]
@@ -72,8 +39,7 @@ font-1 = "FontAwesome:size=10;2"
 font-2 = "FontAwesome:size=12;2"
 font-3 = "FontAwesome:size=14;3"
 
-modules-left = launcher window google-chrome firefox steam code i3
-modules-center =
+modules-left = launcher window filemanager google-chrome firefox steam code i3
 modules-right = memory cpu xbacklight pulseaudio wlan battery temperature date session
 
 tray-position = right
